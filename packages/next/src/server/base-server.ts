@@ -1370,6 +1370,7 @@ export default abstract class Server<ServerOptions extends Options = Options> {
       }
     }
 
+    delete query.__nextRSC
     delete query.__nextDataReq
 
     // normalize req.url for SSG paths as it is not exposed
